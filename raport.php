@@ -19,9 +19,9 @@
 
             $dbc = mysqli_connect('localhost', 'root','','aliendb_wel18ec1s1') or die('Błąd podczas łączenia z bazą danych SQL.');
 
-            $query = "INSERT INTO aliens_abduction(first_name, last_name, when_it_happened, how_long, how_many, alien_description, what_they_did, fang_spotted, other, email) VALUES ('$first_name','$first_name','$last_name','$when_it_happened','$how_long', '$how_many', '$alien_description', '$what_they_did', '$fang_spotted', '$other', '$email')";
+            $sql = "INSERT INTO aliens_abduction(first_name, last_name, when_it_happened, how_long, how_many, alien_description, what_they_did, fang_spotted, other, email) VALUES ('$first_name','$last_name','$when_it_happened','$how_long', '$how_many', '$alien_description', '$what_they_did', '$fang_spotted', '$other', '$email')";
 
-            $result = mysqli_query($dbc, $query) or die ('Wystąpił problem podczas przetwarzania zapytań do bazy SQL');
+            $result = mysqli_query($dbc, $sql) or die ('Wystąpił problem podczas przetwarzania zapytań do bazy SQL');
 
             mysqli_close($dbc);
 
