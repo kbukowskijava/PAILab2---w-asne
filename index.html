@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Kosmici mnie uprowadzili - zgłoszenie porwania</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+    </head>
+    <body>
+            <div class="container">
+            <form method = "post" action="raport.php">
+                <p class="text-center"><h2>Kosmici mnie uprowadzili - zgłoszenie porwania</h2></p>
+                <p>Podziel się historią uprowadzenia</p>            
+                <table class="table">
+                <tbody>
+                    <tr>
+                    <td>
+                        <label for="firstname">Imię:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="firstname" name="firstname"/>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <label for="lastname">Nazwisko:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="lastname" name="lastname"/>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <label for="email">Adres e-mail:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="email" name="email"/>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <label for="whenithappened">Kiedy to się stało?</label>
+                    </td>
+                    <td>
+                        <input type="text" id="whenithappened" name="whenithappened"/>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <label for="howlong">Jak długo Cię nie było?</label>
+                    </td>
+                    <td>
+                        <input type="text" id="howlong" name="howlong"/>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <label for="howmany">Ilu kosmitów widziałeś?</label>
+                    </td>
+                    <td>
+                        <input type="text" id="howmany" name="howmany"/>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <label for="aliendescription">Opisz ich:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="aliendescription" name="aliendescription" size="32"/>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <label for="whattheydid">Co Ci zrobili?</label>
+                    </td>
+                    <td>
+                        <input type="text" id="whattheydid" name="whattheydid" size="32"/>
+                    </td>
+                    </tr>
+                    <td>
+                        <label for="fangspotted">Czy widziałeś Kła?</label>
+                    </td>
+                    <td>
+                        Tak <input id="fangspotted" name="fangspotted" type="radio" value="tak">
+                        Nie <input id="fangspotted" name="fangspotted" type="radio" value="nie">
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="other">Czy chcesz coś jeszcze dodać?</label>
+                        </td>
+                        <td>
+                            <textarea id="other" name="other"></textarea>
+                        </td>
+                    </tr>  
+                </tbody>
+                </table>
+                <input type="submit" value="Zgłoś uprowadzenie" name="wyślij"/>
+            </form> 
+        </div>
+    </body>
+</html>

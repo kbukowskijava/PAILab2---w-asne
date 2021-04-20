@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Kosmici mnie uprowadzili - zgłoszenie porwania</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+    </head>
+    <body>
+        <h2>Kosmici mnie uprowadzili - zgłoszenie porwania</h2>
+        <p>Podziel się historią uprowadzenia</p>
+        <form method="POST" action="mailto:kacper.bukowski@student.wat.edu.pl">
+
+
+<input type="text" id="lastname" name="lastname"/><br/>
+<label for="email">Adres e-mail:</label>
+<input type="text" id="email" name="email"/><br/>
+<label for="whenithappened">Kiedy to się stało?</label>
+<input type="text" id="whenithappened" name="whenithappened"/><br/>
+<label for="howlong">Jak długo Cię nie było?</label>
+<input type="text" id="howlong" name="howlong"/><br/>
+<label for="howmany">Ilu kosmitów widziałeś?</label>
+<input type="text" id="howmany" name="howmany"/><br/>
+<label for="aliendescription">Opisz ich:</label>
+<input type="text" id="aliendescription" name="aliendescription" size="32"/><br/>
+<label for="whattheydid">Co Ci zrobili?</label>
+<input type="text" id="whattheydid" name="whattheydid" size="32"/><br/>
+<label for="fangspotted">Czy widziałeś Kła?</label>
+Tak <input id="fangspotted" name="fangspotted" type="radio" value="tak">
+Nie <input id="fangspotted" name="fangspotted" type="radio" value="nie"></form><br/>
+<label for="other">Czy chcesz coś jeszcze dodać?</label>
+<textarea id="other" name="other"></textarea><br/>
+<input type="submit" value="Zgłoś uprowadzenie" name="wyślij"/>
+</form>
+
+<div class="container">
+    <h2>Basic Table</h2>
+    <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>            
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>
+            <label for="firstname">Imię:</label>
+          </td>
+          <td>
+            <input type="text" id="firstname" name="firstname"/>
+          </td>
+        </tr>
+        <td>
+            <label for="lastname">Nazwisko:</label>
+          </td>
+          <td>
+            <input type="text" id="firstname" name="firstname"/>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+    </body>
+</html>
