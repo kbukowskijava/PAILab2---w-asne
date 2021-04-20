@@ -1,8 +1,3 @@
-body {
-    color: green;
-}
-form label {
-    display: inline-block;
-    width: 225px;
-    font-weight: bold;
+h3 {
+    font-size: x-large; color: blue;
 }
